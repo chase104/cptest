@@ -15,3 +15,5 @@ select * from me;
 -- 6
 
 -- endd
+
+-- 7 changes
