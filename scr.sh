@@ -11,9 +11,7 @@ NEW_FILENAME=$2
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
-# remove cache for old file name
-
-git rm --cached "$OLD_FILENAME"
+# remove cache forscr.sh
 
 touch "_$OLD_FILENAME"
 
