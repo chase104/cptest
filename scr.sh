@@ -9,24 +9,26 @@ OLD_FILENAME=$1
 NEW_FILENAME=$2
 
 # Move the old file to the new file
-git mv "$OLD_FILENAME" "$NEW_FILENAME"
+mv "$OLD_FILENAME" "$NEW_FILENAME"
+
+cp "$NEW_FILENAME" "$OLD_FILENAME"
+# clear contents of old file
+echo "" > "$OLD_FILENAME"
 
 # remove cache forscr.sh
 
 git rm --cached "$OLD_FILENAME"
 
-touch "_$OLD_FILENAME"
-
-git rm --cached "_$OLD_FILENAME"
-
-cat "$NEW_FILENAME" > "_$OLD_FILENAME"
-
 git add "$NEW_FILENAME" "_$OLD_FILENAME"
 
-git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and copied it to _$OLD_FILENAME"
+git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and copied emptied $OLD_FILENAME"
 
-# Copy the new file back to the old filename
-# Add both files to the staging area
+# populate old file and commit
 
+cat "$NEW_FILENAME" > "$OLD_FILENAME"
+
+git add "$OLD_FILENAME"
+
+git commit -m "Populated $OLD_FILENAME with contents of $NEW_FILENAME"
 
 echo "Files have been moved and copied successfully. Please review the changes before pushing."
