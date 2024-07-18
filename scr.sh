@@ -18,24 +18,24 @@ git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME"
 
 
 
-touch "__old__$OLD_FILENAME"
+touch "$OLD_FILENAME"
 
-cat "$NEW_FILENAME" > "__old__$OLD_FILENAME"
+cat "$NEW_FILENAME" > "$OLD_FILENAME"
 
 
 echo "
 
-/* This is a new file with additional inert content" >> "__old__$OLD_FILENAME"
+/* This is a new file with additional inert content" >> "$OLD_FILENAME"
 for i in {1..2000}
 do
-    echo "This is line $i of the comment" >> "__old__$OLD_FILENAME"
+    echo "This is line $i of the comment" >> "$OLD_FILENAME"
 done
-echo "End of the 2,000-line comment */" >> "__old__$OLD_FILENAME"
+echo "End of the 2,000-line comment */" >> "$OLD_FILENAME"
 
 
-git add "$NEW_FILENAME" "__old__$OLD_FILENAME"
+git add "$NEW_FILENAME" "$OLD_FILENAME"
 
-git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and created __old__$OLD_FILENAME"
+git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and created $OLD_FILENAME"
 
 git push origin HEAD
 
