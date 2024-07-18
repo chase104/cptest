@@ -13,7 +13,9 @@ mv "$OLD_FILENAME" "$NEW_FILENAME"
 
 
 
-cp "$NEW_FILENAME" "__old__$OLD_FILENAME"
+touch "__old__$OLD_FILENAME"
+
+cat "$NEW_FILENAME" > "__old__$OLD_FILENAME"
 
 git rm --cached "$OLD_FILENAME"
 git rm --cached "__old__$OLD_FILENAME"
