@@ -11,6 +11,10 @@ NEW_FILENAME=$2
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
+# remove cache for old file name
+
+git rm --cached "$OLD_FILENAME"
+
 touch "_$OLD_FILENAME"
 
 cat "$NEW_FILENAME" > "_$OLD_FILENAME"
