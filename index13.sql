@@ -23,5 +23,3 @@ select * from me;
 -- 12 changes
 
 -- 13
-
--- 14
