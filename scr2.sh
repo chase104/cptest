@@ -12,11 +12,16 @@ new_file=$2
 # Create a temporary branch
 git checkout -b temp-branch
 
-# Rename original_file to new_file and commit
-git mv "$original_file" "$new_file"
-git commit -m "Rename $original_file to $new_file"
+# Rename original_file to a temporary name and commit
+temp_name="${original_file}_temp"
+git mv "$original_file" "$temp_name"
+git commit -m "Rename $original_file to $temp_name"
 
-# Create new original_file and make a slight change
+# Rename the temporary file to new_file and commit
+git mv "$temp_name" "$new_file"
+git commit -m "Rename $temp_name to $new_file"
+
+# Create a new original_file with a slight change and commit
 cp "$new_file" "$original_file"
 echo "# This is a new $original_file" >> "$original_file"
 git add "$original_file"
