@@ -12,7 +12,7 @@ NEW_FILENAME=$2
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
 # Add both files to the staging area
-git add "$OLD_FILENAME" "$NEW_FILENAME"
+git add "$NEW_FILENAME"
 
 # Commit the changes
 git commit -m "Renamed $OLD_FILENAME to $NEW_FILENAME and copied $NEW_FILENAME back to $OLD_FILENAME"
