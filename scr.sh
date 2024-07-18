@@ -11,6 +11,11 @@ NEW_FILENAME=$2
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
+# commit rename 
+
+git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME"
+
+
 
 
 touch "__old__$OLD_FILENAME"
