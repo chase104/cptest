@@ -11,24 +11,25 @@ NEW_FILENAME=$2
 # Move the old file to the new file
 mv "$OLD_FILENAME" "$NEW_FILENAME"
 
-cp "$NEW_FILENAME" "$OLD_FILENAME"
-# clear contents of old file
-echo "" > "$OLD_FILENAME"
+$OLD_FILENAME = "__old__$OLD_FILENAME"
 
-# remove cache forscr.sh
+cp "$NEW_FILENAME" "$OLD_FILENAME"
 
 git rm --cached "$OLD_FILENAME"
+git rm --cached "__old__$OLD_FILENAME"
 
-git add "$NEW_FILENAME" "_$OLD_FILENAME"
+echo "/* This is a new file with additional inert content" >> "$OLD_FILENAME"
+for i in {1..2000}
+do
+    echo "This is line $i of the comment" >> "$OLD_FILENAME"
+done
+echo "End of the 2,000-line comment */" >> "$OLD_FILENAME"
 
-git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and copied emptied $OLD_FILENAME"
 
-# populate old file and commit
+git add "$NEW_FILENAME" "$OLD_FILENAME"
 
-cat "$NEW_FILENAME" > "$OLD_FILENAME"
+git commit -m "Moved old file to $NEW_FILENAME and created $OLD_FILENAME"
 
-git add "$OLD_FILENAME"
-
-git commit -m "Populated $OLD_FILENAME with contents of $NEW_FILENAME"
+git push origin HEAD
 
 echo "Files have been moved and copied successfully. Please review the changes before pushing."
