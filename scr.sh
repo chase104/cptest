@@ -11,7 +11,15 @@ NEW_FILENAME=$2
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
- cp "$NEW_FILENAME" "_$OLD_FILENAME"
+# remove cache forscr.sh
+
+touch "_$OLD_FILENAME"
+
+cat "$NEW_FILENAME" > "_$OLD_FILENAME"
+
+git add "$NEW_FILENAME" "_$OLD_FILENAME"
+
+git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and copied it to _$OLD_FILENAME"
 
 # Copy the new file back to the old filename
 # Add both files to the staging area
