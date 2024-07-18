@@ -22,8 +22,6 @@ touch "__old__$OLD_FILENAME"
 
 cat "$NEW_FILENAME" > "__old__$OLD_FILENAME"
 
-git rm --cached "$OLD_FILENAME"
-git rm --cached "__old__$OLD_FILENAME"
 
 echo "
 
