@@ -11,7 +11,9 @@ NEW_FILENAME=$2
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
- cp "$NEW_FILENAME" "_$OLD_FILENAME"
+touch "_$OLD_FILENAME"
+
+cat "$NEW_FILENAME" > "_$OLD_FILENAME"
 
 git add "$NEW_FILENAME" "_$OLD_FILENAME"
 
