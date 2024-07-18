@@ -13,6 +13,10 @@ git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
  cp "$NEW_FILENAME" "_$OLD_FILENAME"
 
+git add "$NEW_FILENAME" "_$OLD_FILENAME"
+
+git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME and copied it to _$OLD_FILENAME"
+
 # Copy the new file back to the old filename
 # Add both files to the staging area
 
