@@ -9,7 +9,7 @@ OLD_FILENAME=$1
 NEW_FILENAME=$2
 
 # Move the old file to the new file
-mv "$OLD_FILENAME" "$NEW_FILENAME"
+git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
 
 
