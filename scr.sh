@@ -13,7 +13,11 @@ git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
 # remove cache forscr.sh
 
+git rm --cached "$OLD_FILENAME"
+
 touch "_$OLD_FILENAME"
+
+git rm --cached "_$OLD_FILENAME"
 
 cat "$NEW_FILENAME" > "_$OLD_FILENAME"
 
