@@ -18,7 +18,7 @@ git add "$OLD_FILENAME" "$NEW_FILENAME"
 git commit -m "Renamed $OLD_FILENAME to $NEW_FILENAME and copied $NEW_FILENAME back to $OLD_FILENAME"
 
 # Copy the new file back to the old filename
-cp "$NEW_FILENAME" "$OLD_FILENAME"
+# cp "$NEW_FILENAME" "$OLD_FILENAME"
 
 
 echo "Files have been moved and copied successfully. Please review the changes before pushing."
