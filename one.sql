@@ -10,7 +10,8 @@
 
 
 
--- one end/* This is a new file with additional inert content
+-- one end
+/* This is a new file with additional inert content
 This is line 1 of the comment
 This is line 2 of the comment
 This is line 3 of the comment
