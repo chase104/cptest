@@ -17,9 +17,9 @@ git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME"
 
 git push origin HEAD
 
-touch "$OLD_FILENAME"
+touch "__old__$OLD_FILENAME"
 
-cat "$NEW_FILENAME" > "$OLD_FILENAME"
+cat "$NEW_FILENAME" > "__old__$OLD_FILENAME"
 
 echo "
 
