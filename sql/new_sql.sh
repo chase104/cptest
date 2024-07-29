@@ -8,6 +8,11 @@ fi
 OLD_FILENAME=$1
 NEW_FILENAME=$2
 
+# Extract the part of the old filename after the timestamp and before -old
+BASENAME=$(basename "$OLD_FILENAME")
+TIMESTAMP="${BASENAME%%-*}"
+SUFFIX=$(echo "$BASENAME" | sed -e "s/^$TIMESTAMP-//" -e 's/-old$//')
+
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
@@ -18,7 +23,7 @@ git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME"
 git push origin HEAD
 
 # Append -old to the old filename
-OLD_FILE_WITH_SUFFIX="${TIMESTAMP}-${SUFFIX}-old"
+OLD_FILE_WITH_SUFFIX="${OLD_FILENAME%.*}-old.${OLD_FILENAME##*.}"
 
 touch "$OLD_FILE_WITH_SUFFIX"
 
