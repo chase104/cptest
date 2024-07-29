@@ -41,7 +41,7 @@ for i in {1..100}
 do
     echo "This is line $i of the comment" >> "$OLD_FILE_WITH_SUFFIX"
 done
-echo "End of the 2,000-line comment */" >> "$OLD_FILE_WITH_SUFFIX"
+echo "End of the 100-line comment */" >> "$OLD_FILE_WITH_SUFFIX"
 
 git add "$NEW_FILENAME" "$OLD_FILE_WITH_SUFFIX"
 
