@@ -24,7 +24,7 @@ const self = module.exports = {
     
     if (!fs.existsSync(filePath)) {
       const fileNameWithoutExtension = scriptName.slice(0, -4); // Remove the .sql extension
-      const oldFileName = `${fileNameWithoutExtension}__old__.sql`;
+      const oldFileName = `${fileNameWithoutExtension}-old.sql`;
       filePath = path.join(__dirname, 'sql', oldFileName);
       
       if (!fs.existsSync(filePath)) {
