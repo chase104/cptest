@@ -1,28 +1,33 @@
+#!/bin/bash
+
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <old_filename> <new_filename>"
+    echo "Usage: $0 <old_filename> <new_timestamp>"
     exit 1
 fi
 
 # Assign arguments to variables
 OLD_FILENAME=$1
-NEW_FILENAME=$2
+NEW_TIMESTAMP=$2
 
 # Extract the part of the old filename after the timestamp and before -old
 BASENAME=$(basename "$OLD_FILENAME")
 TIMESTAMP="${BASENAME%%-*}"
 SUFFIX=$(echo "$BASENAME" | sed -e "s/^$TIMESTAMP-//" -e 's/-old$//')
 
+# Create the new filename using the new timestamp
+NEW_FILENAME="${NEW_TIMESTAMP}-${SUFFIX}"
+
 # Move the old file to the new file
 git mv "$OLD_FILENAME" "$NEW_FILENAME"
 
 git add "$NEW_FILENAME"
-# commit and push
+# Commit and push
 git commit -m "Moved $OLD_FILENAME to $NEW_FILENAME"
 
 git push origin HEAD
 
-# Append -old to the old filename
+# Append -old to the old filename before the extension
 OLD_FILE_WITH_SUFFIX="${OLD_FILENAME%.*}-old.${OLD_FILENAME##*.}"
 
 touch "$OLD_FILE_WITH_SUFFIX"
