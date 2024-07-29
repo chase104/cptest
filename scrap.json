@@ -1,0 +1,352 @@
+{"fileName": "basicAdvancedSciNotation.json",
+    "pageCalculations": [
+        {
+            "entries": [
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "V9LH-HXRV-C3NJ-W73E",
+                    "gradingCriteria": {
+                        "bounds": {
+                            "deduction": "0.22",
+                            "feedback": "learn to add",
+                            "lowerMultiplier": 0.95,
+                            "upperMultiplier": 1.05
+                        },
+                        "decimalPlaces": {
+                            "deduction": "10",
+                            "feedback": "Decimal places don't add up",
+                            "value": 2
+                        },
+                        "significantFigures": {
+                            "deduction": "",
+                            "feedback": "",
+                            "value": ""
+                        }
+                    },
+                    "order": 1,
+                    "points": 1.11,
+                    "prompt": "Grading decimals: Add the two numbers together (NO UNITS)",
+                    "type": "numeric",
+                    "varName": "sum1"
+                },
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "V68V-QK8Z-WAUJ-K8XM",
+                    "gradingCriteria": {
+                        "bounds": {
+                            "deduction": "0.22",
+                            "feedback": "learn to add",
+                            "lowerMultiplier": 0.95,
+                            "upperMultiplier": 1.05
+                        },
+                        "decimalPlaces": {
+                            "deduction": "10",
+                            "feedback": "Decimal places don't add up",
+                            "value": 2
+                        },
+                        "significantFigures": {
+                            "deduction": "",
+                            "feedback": "",
+                            "value": ""
+                        }
+                    },
+                    "order": 2,
+                    "points": 0,
+                    "prompt": "Grading Decimals: Add the two numbers together (use g as unit)",
+                    "type": "numeric",
+                    "varName": "sum2"
+                },
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "BLRT-T5C3-VAG6-W5E5",
+                    "gradingCriteria": {
+                        "bounds": {
+                            "deduction": "0.22",
+                            "feedback": "learn to add",
+                            "lowerMultiplier": 0.95,
+                            "upperMultiplier": 1.05
+                        },
+                        "decimalPlaces": {
+                            "deduction": "0",
+                            "feedback": "Decimal places don't add up",
+                            "value": 2
+                        },
+                        "significantFigures": {
+                            "deduction": "",
+                            "feedback": "",
+                            "value": ""
+                        }
+                    },
+                    "order": 3,
+                    "points": 1.11,
+                    "prompt": "Grading decimals: Add the two numbers together (use mL as unit)",
+                    "type": "numeric",
+                    "varName": "sum3"
+                },
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "KAYR-FLVC-KFFW-Y58C",
+                    "gradingCriteria": {
+                        "bounds": {
+                            "deduction": "0.22",
+                            "feedback": "learn to add",
+                            "lowerMultiplier": 0.95,
+                            "upperMultiplier": 1.05
+                        },
+                        "decimalPlaces": {
+                            "deduction": "",
+                            "feedback": "",
+                            "value": ""
+                        },
+                        "significantFigures": {
+                            "deduction": "10",
+                            "feedback": "Sig figs are not 2",
+                            "value": 2
+                        }
+                    },
+                    "order": 4,
+                    "points": 10,
+                    "prompt": "Grading sig figs: Add the two numbers together (NO UNITS)",
+                    "type": "numeric",
+                    "varName": "sum4"
+                },
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "6NT5-8AKC-2PU9-Q3JW",
+                    "gradingCriteria": {
+                        "bounds": {
+                            "deduction": "0.22",
+                            "feedback": "learn to add",
+                            "lowerMultiplier": 0.95,
+                            "upperMultiplier": 1.05
+                        },
+                        "decimalPlaces": {
+                            "deduction": "",
+                            "feedback": "",
+                            "value": ""
+                        },
+                        "significantFigures": {
+                            "deduction": "10",
+                            "feedback": "Sig figs are not 2",
+                            "value": 2
+                        }
+                    },
+                    "order": 5,
+                    "points": 10,
+                    "prompt": "Grading sig figs: Add the two numbers together (use g as unit)",
+                    "type": "numeric",
+                    "varName": "sum5"
+                },
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "YDRU-NFDA-XQ58-8TT3",
+                    "gradingCriteria": {
+                        "bounds": {
+                            "deduction": "0.22",
+                            "feedback": "learn to add",
+                            "lowerMultiplier": 0.95,
+                            "upperMultiplier": 1.05
+                        },
+                        "decimalPlaces": {
+                            "deduction": "",
+                            "feedback": "",
+                            "value": ""
+                        },
+                        "significantFigures": {
+                            "deduction": "10",
+                            "feedback": "Sig figs are not 2",
+                            "value": 2
+                        }
+                    },
+                    "order": 6,
+                    "points": 10,
+                    "prompt": "Grading sig figs: Add the two numbers together (use mL as unit)",
+                    "type": "numeric",
+                    "varName": "sum6"
+                },
+                {
+                    "answer": "",
+                    "calculationId": "YFFU-NFDA-XQ58-8TT4",
+                    "order": 7,
+                    "points": 10,
+                    "prompt": "How does this report make you feel? Be thorough.",
+                    "type": "essay",
+                    "gradingCriteria": {},
+                    "varName": "feelings"
+                },
+                {
+                    "answer": "(num1+num2)",
+                    "calculationId": "YDGG-NFDA-XQ58-8TT5",
+                    "order": 8,
+                    "points": 10,
+                    "prompt": "Upload a picture that expresses the feelings described above.",
+                    "maxFiles": "1",
+                    "type": "fileUpload",
+                    "gradingCriteria": {},
+                    "varName": "feelingspic"
+                }
+            ],
+            "groupDescription": "<p>Add the numbers</p>",
+            "groupId": 1,
+            "groupLabel": "Addition test"
+        }
+    ],
+    "pageFieldDefinitions": [
+        {
+            "entries": [
+                {
+                    "dataEntryId": "YZ56-AYXE-ERPP-DQQT",
+                    "order": 1,
+                    "prompt": "Enter number below 0.5 with two decimal places",
+                    "provisional": "0.40",
+                    "type": "numeric",
+                    "validationCriteria": {
+                        "bounds": {
+                            "feedback": "Must be between 0-0.5",
+                            "lower": 0,
+                            "upper": 0.5
+                        },
+                        "decimalPlaces": {
+                            "feedback": "Must have 2 decimal places.",
+                            "value": "2"
+                        },
+                        "significantFigures": {
+                            "feedback": "",
+                            "value": ""
+                        }
+                    },
+                    "varName": "num1"
+                },
+                {
+                    "dataEntryId": "54BK-XZ5R-S6GR-G9T2",
+                    "order": 2,
+                    "prompt": "Enter second number less than 0.50 with 2 decimal places.",
+                    "provisional": "0.40",
+                    "type": "numeric",
+                    "validationCriteria": {
+                        "bounds": {
+                            "feedback": "Must be between 0-0.5",
+                            "lower": 0,
+                            "upper": 0.5
+                        },
+                        "decimalPlaces": {
+                            "feedback": "Must have 2 decimal places",
+                            "value": "2"
+                        },
+                        "significantFigures": {
+                            "feedback": "",
+                            "value": ""
+                        }
+                    },
+                    "varName": "num2"
+                },
+                {
+                    "dataEntryId": "54BK-XZ5R-S6GR-G9T3",
+                    "order": 3,
+                    "prompt": "Enter a number between 1 and 10^99 in x 10 scientific notation with 2 sig figs.",
+                    "provisional": "1.1E2",
+                    "type": "numeric",
+                    "validationCriteria": {
+                        "bounds": {
+                            "feedback": "Must be between 1 and 10^99",
+                            "lower": "1 x 10^0",
+                            "upper": "1 x 10^99"
+                        },
+                        "decimalPlaces": {
+                            "feedback": "Must have 0 decimal places",
+                            "value": "0"
+                        },
+                        "significantFigures": {
+                            "feedback": "",
+                            "value": ""
+                        }
+                    },
+                    "varName": "num3"
+                },
+                {
+                    "dataEntryId": "54BK-XZ5R-S6GR-G9T4",
+                    "order": 4,
+                    "prompt": "Enter a number between 1 and 10^-99 in x 10 scientific notation with 2 sig figs.",
+                    "provisional": "5.5E-64",
+                    "type": "numeric",
+                    "validationCriteria": {
+                        "bounds": {
+                            "feedback": "Must be between 1 and 10^-99",
+                            "lower": "1 x 10^-99",
+                            "upper": "1 x 10^0"
+                        },
+                        "decimalPlaces": {
+                            "feedback": "",
+                            "value": ""
+                        },
+                        "significantFigures": {
+                            "feedback": "Must have 2 significant figures.",
+                            "value": "2"
+                        }
+                    },
+                    "varName": "num4"
+                },
+                {
+                    "dataEntryId": "54BK-XZ5R-S6GR-G9T5",
+                    "order": 4,
+                    "prompt": "Enter a number between 1 and 1E99 in E scientific notation with 2 sig figs.",
+                    "provisional": "1.1E2",
+                    "type": "numeric",
+                    "validationCriteria": {
+                        "bounds": {
+                            "feedback": "Must be between 1 and 1E99",
+                            "lower": "1E0",
+                            "upper": "1E99"
+                        },
+                        "decimalPlaces": {
+                            "feedback": "Must have 0 decimal places",
+                            "value": "0"
+                        },
+                        "significantFigures": {
+                            "feedback": "Must have 2 significant figures.",
+                            "value": "2"
+                        }
+                    },
+                    "varName": "num5"
+                },
+                {
+                    "dataEntryId": "54BK-XZ5R-S6GR-G9T6",
+                    "order": 4,
+                    "prompt": "Enter a number between 1 and 1E-99 in E scientific notation with 4 decimal places and 2 sig figs.",
+                    "provisional": "5.5E-3",
+                    "type": "numeric",
+                    "validationCriteria": {
+                        "bounds": {
+                            "feedback": "Must be between 1 and 1E-99",
+                            "lower": "1E-99",
+                            "upper": "1E0"
+                        },
+                        "decimalPlaces": {
+                            "feedback": "Must have 4 decimal places",
+                            "value": "4"
+                        },
+                        "significantFigures": {
+                            "feedback": "Must have 2 significant figures.",
+                            "value": "2"
+                        }
+                    },
+                    "varName": "num6"
+                }
+            ],
+            "groupDescription": "<p>Reports are divided into 2 parts, a data entry section and a calculations section. In the data entry section, students are prompted to enter data collected in the lab. Students are able to start and stop this activity, they don't have to complete at once.</p><p>Entered numbers must meet specific criteria</p>",
+            "groupId": 1,
+            "groupLabel": "Data Entry Section"
+        }
+    ],
+    "pageFieldProperties": {
+        "id": 20190425,
+        "points": 0,
+        "score": 0
+    },
+    "pageValidationRules": [],
+    "reportProperties": {
+        "generalFeedback": {
+            "directions": "<div><div>Bonus points for:</div><ul><li>good personal hygiene</li><li>monetary gifts</li><li>can-do attitude</li></ul></div>"
+        }
+    }
+}
